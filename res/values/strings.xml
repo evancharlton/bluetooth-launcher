@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, BluetoothLauncherActivity!</string>
+    <string name="app_name">Bluetooth Launcher</string>
+	<string name="clear">Clear</string>
+	<string name="loading">Loading&#8230;</string>
+	<string name="pick_app">Choose app</string>
+</resources>

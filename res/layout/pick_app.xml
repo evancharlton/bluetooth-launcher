@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/mapping_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+		    android:id="@+id/app"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:paddingTop="15dp"
+		    android:paddingBottom="15dp"
+		    android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
+			android:textAppearance="?android:attr/textAppearanceLarge" />
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list"
+        android:fastScrollEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+	<LinearLayout
+	    android:id="@android:id/empty"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal"
+	    android:gravity="center">
+	    <ProgressBar
+	        android:indeterminate="true"
+	        android:indeterminateOnly="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	    <TextView
+	        android:text="@string/loading"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	</LinearLayout>
+</LinearLayout>
