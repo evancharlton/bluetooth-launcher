@@ -14,13 +14,9 @@ public class BluetoothReceiver extends BroadcastReceiver {
 
         if (intent.hasExtra(BluetoothProfile.EXTRA_STATE)) {
             int state = intent.getIntExtra(BluetoothProfile.EXTRA_STATE, -1);
-            if (state == BluetoothProfile.STATE_CONNECTED
-                    || state == BluetoothProfile.STATE_CONNECTING) {
+            if (state == BluetoothProfile.STATE_CONNECTED) {
                 new DeviceMapping(context).startApp(device);
             }
-            return;
         }
-
-        new DeviceMapping(context).startApp(device);
     }
 }
